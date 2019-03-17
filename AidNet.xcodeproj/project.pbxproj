@@ -18,7 +18,7 @@
 		5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */; };
 		5B6AB1AF223E12BF0021CF8E /* EventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */; };
 		5B6AB1B1223E13980021CF8E /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B0223E13980021CF8E /* DatabaseController.swift */; };
-		5B6AB1B3223E23350021CF8E /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B2223E23350021CF8E /* EventListener.swift */; };
+		5B6AB1B5223E351E0021CF8E /* NotificationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B4223E351E0021CF8E /* NotificationClient.swift */; };
 		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBuilder.swift; sourceTree = "<group>"; };
 		5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDispatcher.swift; sourceTree = "<group>"; };
 		5B6AB1B0223E13980021CF8E /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
-		5B6AB1B2223E23350021CF8E /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
+		5B6AB1B4223E351E0021CF8E /* NotificationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationClient.swift; sourceTree = "<group>"; };
 		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +87,7 @@
 				5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */,
 				5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */,
 				5B6AB1B0223E13980021CF8E /* DatabaseController.swift */,
-				5B6AB1B2223E23350021CF8E /* EventListener.swift */,
+				5B6AB1B4223E351E0021CF8E /* NotificationClient.swift */,
 			);
 			path = AidNet;
 			sourceTree = "<group>";
@@ -259,12 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6AB1AB223E09B50021CF8E /* Event.swift in Sources */,
+				5B6AB1B5223E351E0021CF8E /* NotificationClient.swift in Sources */,
 				5B6AB1AF223E12BF0021CF8E /* EventDispatcher.swift in Sources */,
 				5B6AB196223DFE990021CF8E /* ViewController.swift in Sources */,
 				5B6AB19C223DFE990021CF8E /* AidNet.xcdatamodeld in Sources */,
 				5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */,
 				5B6AB194223DFE990021CF8E /* AppDelegate.swift in Sources */,
-				5B6AB1B3223E23350021CF8E /* EventListener.swift in Sources */,
 				5B6AB1B1223E13980021CF8E /* DatabaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

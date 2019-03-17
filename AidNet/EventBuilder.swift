@@ -30,7 +30,7 @@ class EventBuilder {
             self.event.type = .medical
         case "police":
             self.event.type = .police
-        case "climate":
+        case "nature":
             self.event.type = .nature
         default:
             self.event.type = .other

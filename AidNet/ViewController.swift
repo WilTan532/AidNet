@@ -41,12 +41,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         locationManager.requestAlwaysAuthorization()
         startReceivingLocationChanges()
         
-        // pushNotification()
-        
         // Testing code
         let dispatcher = EventDispatcher()
         let db = DatabaseController()
-        db.listenForEvent()
+        db.listenForEventAndNotify()
         dispatcher.dispatchTest()
     }
     
@@ -66,36 +64,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         marker.position = loc.coordinate
         marker.title = "whatever"
         marker.map = mapView
-    }
-    
-    func pushNotification() {
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        notificationCenter.getNotificationSettings(completionHandler: { (settings) in
-            guard settings.authorizationStatus == .authorized else {return}
-            
-            if settings.alertSetting == .enabled {
-                self.scheduleNotification()
-            }
-        })
-    }
-    
-    func scheduleNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "Daily Check-In for you"
-        content.body = "Please tell me how you feel :)"
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-        
-        let notificationCenter = UNUserNotificationCenter.current()
-        notificationCenter.add(request) { (error) in
-            if error != nil {
-                debugPrint("Something went wrong")
-            }
-        }
     }
 
     /*

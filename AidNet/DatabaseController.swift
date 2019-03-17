@@ -38,49 +38,16 @@ class DatabaseController {
         ref.child("events").childByAutoId().setValue(eventJSON)
     }
     
-    func listenForEvent() {
+    func listenForEventAndNotify() {
         ref = Database.database().reference()
         let eventsNode = ref.child("events")
         
-        eventsNode.queryOrdered(byChild: "timestamp").queryStarting(atValue: Date().getTimestamp()).observeSingleEvent(of: .childAdded, with: { (snapshot) in
-            debugPrint("**************new event added**************")
-            self.pushNotification()
+        eventsNode.queryOrdered(byChild: "timestamp").queryStarting(atValue: Date().getTimestamp()).queryLimited(toLast: 1).observeSingleEvent(of: .childAdded, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let latitude = value?["latitude"] as? Float
+            let longitude = value?["longtitude"] as? Float
+            let eventType = value?["type"] as! String
+            NotificationClient().push(title: "Alert", body: "Someone needs \(eventType) help")
         })
-    }
-    
-    // Test area
-    func pushNotification() {
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        notificationCenter.getNotificationSettings(completionHandler: { (settings) in
-            guard settings.authorizationStatus == .authorized else {return}
-            
-            if settings.alertSetting == .enabled {
-                self.scheduleNotification()
-            }
-        })
-    }
-    
-    func scheduleNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "Alert"
-        content.body = "Someone needs help"
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-        
-        let notificationCenter = UNUserNotificationCenter.current()
-        notificationCenter.add(request) { (error) in
-            if error != nil {
-                debugPrint("Something went wrong")
-            }
-        }
-    }
-    
-    func removeListeners() {
-        ref = Database.database().reference()
-        ref.removeAllObservers()
     }
 }
