@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>692499651770-0pr4em10t8g5h8o10c1ev70469hkpuvh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.692499651770-0pr4em10t8g5h8o10c1ev70469hkpuvh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmSEmJ7z_0L-VD2EQSfnR5l0Ghf86HihA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>692499651770</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aidnet.AidNet</string>
+	<key>PROJECT_ID</key>
+	<string>aidnet-ae9cc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aidnet-ae9cc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:692499651770:ios:054ab23816093c4a</string>
+	<key>DATABASE_URL</key>
+	<string>https://aidnet-ae9cc.firebaseio.com</string>
+</dict>
+</plist>
