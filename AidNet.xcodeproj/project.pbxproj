@@ -14,6 +14,8 @@
 		5B6AB19E223DFE990021CF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB19D223DFE990021CF8E /* Assets.xcassets */; };
 		5B6AB1A1223DFE990021CF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB19F223DFE990021CF8E /* LaunchScreen.storyboard */; };
 		5B6AB1A9223E01E70021CF8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1A8223E01E70021CF8E /* GoogleService-Info.plist */; };
+		5B6AB1AB223E09B50021CF8E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AA223E09B50021CF8E /* Event.swift */; };
+		5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */; };
 		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		5B6AB1A0223DFE990021CF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6AB1A2223DFE990021CF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6AB1A8223E01E70021CF8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B6AB1AA223E09B50021CF8E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBuilder.swift; sourceTree = "<group>"; };
 		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,8 @@
 				5B6AB19F223DFE990021CF8E /* LaunchScreen.storyboard */,
 				5B6AB1A2223DFE990021CF8E /* Info.plist */,
 				5B6AB19A223DFE990021CF8E /* AidNet.xcdatamodeld */,
+				5B6AB1AA223E09B50021CF8E /* Event.swift */,
+				5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */,
 			);
 			path = AidNet;
 			sourceTree = "<group>";
@@ -239,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6AB1AB223E09B50021CF8E /* Event.swift in Sources */,
 				5B6AB196223DFE990021CF8E /* ViewController.swift in Sources */,
 				5B6AB19C223DFE990021CF8E /* AidNet.xcdatamodeld in Sources */,
+				5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */,
 				5B6AB194223DFE990021CF8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
