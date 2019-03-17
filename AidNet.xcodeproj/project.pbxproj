@@ -13,9 +13,11 @@
 		5B6AB19C223DFE990021CF8E /* AidNet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB19A223DFE990021CF8E /* AidNet.xcdatamodeld */; };
 		5B6AB19E223DFE990021CF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB19D223DFE990021CF8E /* Assets.xcassets */; };
 		5B6AB1A1223DFE990021CF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB19F223DFE990021CF8E /* LaunchScreen.storyboard */; };
+		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AidNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6AB190223DFE990021CF8E /* AidNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AidNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6AB193223DFE990021CF8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6AB195223DFE990021CF8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5B6AB19D223DFE990021CF8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6AB1A0223DFE990021CF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6AB1A2223DFE990021CF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
+		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5B6AB192223DFE990021CF8E /* AidNet */,
 				5B6AB191223DFE990021CF8E /* Products */,
+				FDE79FC7841976EDDBE587AA /* Pods */,
+				BB9DAFA9951F68221E447BDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AidNet;
 			sourceTree = "<group>";
 		};
+		BB9DAFA9951F68221E447BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDE79FC7841976EDDBE587AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */,
+				FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B6AB1A5223DFE990021CF8E /* Build configuration list for PBXNativeTarget "AidNet" */;
 			buildPhases = (
+				A92F37CE11A7D67703F03DCD /* [CP] Check Pods Manifest.lock */,
 				5B6AB18C223DFE990021CF8E /* Sources */,
 				5B6AB18D223DFE990021CF8E /* Frameworks */,
 				5B6AB18E223DFE990021CF8E /* Resources */,
+				D4E0128E70FEA7B99D05B413 /* [CP] Embed Pods Frameworks */,
+				5C0B5FD61A3DE733F397EB65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +159,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C0B5FD61A3DE733F397EB65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AidNet/Pods-AidNet-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AidNet/Pods-AidNet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A92F37CE11A7D67703F03DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AidNet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E0128E70FEA7B99D05B413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AidNet/Pods-AidNet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AidNet/Pods-AidNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B6AB18C223DFE990021CF8E /* Sources */ = {
@@ -283,6 +382,7 @@
 		};
 		5B6AB1A6223DFE990021CF8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +401,7 @@
 		};
 		5B6AB1A7223DFE990021CF8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
