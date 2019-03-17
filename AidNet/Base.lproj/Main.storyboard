@@ -49,8 +49,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.25" width="1" height="1"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slogan.png" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-yC-GLe">
+                                <rect key="frame" x="123" y="161" width="210" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpS-AJ-QUS">
-                                <rect key="frame" x="11" y="105" width="46" height="46"/>
+                                <rect key="frame" x="22" y="120" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="menu.jpg"/>
                             </button>
@@ -75,5 +79,6 @@
         <image name="menu.jpg" width="512" height="512"/>
         <image name="nature.jpg" width="3544" height="3544"/>
         <image name="police.jpg" width="3545" height="3544"/>
+        <image name="slogan.png" width="1166" height="106"/>
     </resources>
 </document>

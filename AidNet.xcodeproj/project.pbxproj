@@ -26,6 +26,7 @@
 		5B6AB1C1223E8ED70021CF8E /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C0223E8ED70021CF8E /* map.jpg */; };
 		5B6AB1C3223E90960021CF8E /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C2223E90960021CF8E /* logo.jpg */; };
 		5B6AB1C5223E926A0021CF8E /* menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C4223E926A0021CF8E /* menu.jpg */; };
+		5B6AB1C7223E98170021CF8E /* slogan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C6223E98170021CF8E /* slogan.png */; };
 		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		5B6AB1C0223E8ED70021CF8E /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
 		5B6AB1C2223E90960021CF8E /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		5B6AB1C4223E926A0021CF8E /* menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu.jpg; sourceTree = "<group>"; };
+		5B6AB1C6223E98170021CF8E /* slogan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slogan.png; sourceTree = "<group>"; };
 		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		5B6AB192223DFE990021CF8E /* AidNet */ = {
 			isa = PBXGroup;
 			children = (
+				5B6AB1C6223E98170021CF8E /* slogan.png */,
 				5B6AB1C4223E926A0021CF8E /* menu.jpg */,
 				5B6AB1C2223E90960021CF8E /* logo.jpg */,
 				5B6AB1C0223E8ED70021CF8E /* map.jpg */,
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6AB1A1223DFE990021CF8E /* LaunchScreen.storyboard in Resources */,
+				5B6AB1C7223E98170021CF8E /* slogan.png in Resources */,
 				5B6AB1B9223E43AE0021CF8E /* police.jpg in Resources */,
 				5B6AB1A9223E01E70021CF8E /* GoogleService-Info.plist in Resources */,
 				5B6AB19E223DFE990021CF8E /* Assets.xcassets in Resources */,
