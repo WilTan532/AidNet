@@ -18,10 +18,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func onClickDispatchButtonAction(_ sender: UIButton) {
         let confirm = UIAlertController(title: "Confirm", message: "Are you sure you want to ask for help?", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+        let ok = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
             EventDispatcher().dispatch()
         })
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in
+        let cancel = UIAlertAction(title: "No", style: .cancel, handler: { (action) -> Void in
             
         })
         
@@ -32,8 +32,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func onClickMapButtonAction(_ sender: UIButton) {
-        let mapViewController = MapViewController()
-        self.present(mapViewController, animated: true, completion: nil)
+        let confirm = UIAlertController(title: "Confirm", message: "Do you want to help?", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+            let mapViewController = MapViewController()
+            NotificationClient().push(title: "Alert", body: "AIDEE is on the way")
+            self.present(mapViewController, animated: true, completion: nil)
+        })
+        let cancel = UIAlertAction(title: "No", style: .cancel, handler: { (action) -> Void in
+            
+        })
+        
+        confirm.addAction(ok)
+        confirm.addAction(cancel)
+        self.present(confirm, animated: true, completion: nil)
     }
     
     let locationManager = CLLocationManager()
@@ -77,27 +88,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Do something with the location.
         let lol = CLLocation.init(latitude: 43.65, longitude: -79.38)
-        // setMarker(location: lol)
     }
-    
-    // TODO: Fix the location updates
-    func setMarker(location: CLLocation) {
-        let loc = CLLocation.init(latitude: 43.65, longitude: -79.38)
-        
-        let marker = GMSMarker()
-        marker.position = loc.coordinate
-        marker.title = "whatever"
-        marker.map = mapView
-    }
-
-    /*
-    override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: 43.65, longitude: -79.38, zoom: 12.0)
-        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-    }
-    */
-    
 
 }
 
