@@ -12,6 +12,11 @@ import UserNotifications
 
 class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
+    @IBOutlet weak var onClickDispatchButton: UIButton!
+    
+    @IBAction func onClickDispatchButtonAction(_ sender: UIButton) {
+        EventDispatcher().dispatchTest()
+    }
     let locationManager = CLLocationManager()
     
     var mapView: GMSMapView?
@@ -45,7 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         let dispatcher = EventDispatcher()
         let db = DatabaseController()
         db.listenForEventAndNotify()
-        dispatcher.dispatchTest()
+        // dispatcher.dispatchTest()
     }
     
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
