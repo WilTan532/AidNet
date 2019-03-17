@@ -50,6 +50,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
                 self.scheduleNotification()
             }
         })
+        
+        // Testing code
+        // let dispatcher = EventDispatcher()
+        // dispatcher.dispatchTest()
     }
     
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {

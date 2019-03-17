@@ -16,6 +16,8 @@
 		5B6AB1A9223E01E70021CF8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1A8223E01E70021CF8E /* GoogleService-Info.plist */; };
 		5B6AB1AB223E09B50021CF8E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AA223E09B50021CF8E /* Event.swift */; };
 		5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */; };
+		5B6AB1AF223E12BF0021CF8E /* EventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */; };
+		5B6AB1B1223E13980021CF8E /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B0223E13980021CF8E /* DatabaseController.swift */; };
 		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		5B6AB1A8223E01E70021CF8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B6AB1AA223E09B50021CF8E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBuilder.swift; sourceTree = "<group>"; };
+		5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDispatcher.swift; sourceTree = "<group>"; };
+		5B6AB1B0223E13980021CF8E /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,8 @@
 				5B6AB19A223DFE990021CF8E /* AidNet.xcdatamodeld */,
 				5B6AB1AA223E09B50021CF8E /* Event.swift */,
 				5B6AB1AC223E0BB50021CF8E /* EventBuilder.swift */,
+				5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */,
+				5B6AB1B0223E13980021CF8E /* DatabaseController.swift */,
 			);
 			path = AidNet;
 			sourceTree = "<group>";
@@ -223,14 +229,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AidNet/Pods-AidNet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,10 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6AB1AB223E09B50021CF8E /* Event.swift in Sources */,
+				5B6AB1AF223E12BF0021CF8E /* EventDispatcher.swift in Sources */,
 				5B6AB196223DFE990021CF8E /* ViewController.swift in Sources */,
 				5B6AB19C223DFE990021CF8E /* AidNet.xcdatamodeld in Sources */,
 				5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */,
 				5B6AB194223DFE990021CF8E /* AppDelegate.swift in Sources */,
+				5B6AB1B1223E13980021CF8E /* DatabaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 354XJ7P26C;
 				INFOPLIST_FILE = AidNet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 354XJ7P26C;
 				INFOPLIST_FILE = AidNet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

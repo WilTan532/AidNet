@@ -8,5 +8,7 @@ target 'AidNet' do
   # Pods for AidNet
   pod 'GoogleMaps'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end
