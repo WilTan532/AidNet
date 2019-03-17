@@ -10,13 +10,32 @@ import UIKit
 import GoogleMaps
 import UserNotifications
 
-class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var onClickDispatchButton: UIButton!
     
+    @IBOutlet weak var onClickMapButton: UIButton!
+    
     @IBAction func onClickDispatchButtonAction(_ sender: UIButton) {
-        EventDispatcher().dispatchTest()
+        let confirm = UIAlertController(title: "Confirm", message: "Are you sure you want to ask for help?", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            EventDispatcher().dispatch()
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in
+            
+        })
+        
+        confirm.addAction(ok)
+        confirm.addAction(cancel)
+        self.present(confirm, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func onClickMapButtonAction(_ sender: UIButton) {
+        let mapViewController = MapViewController()
+        self.present(mapViewController, animated: true, completion: nil)
+    }
+    
     let locationManager = CLLocationManager()
     
     var mapView: GMSMapView?
@@ -50,7 +69,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         let dispatcher = EventDispatcher()
         let db = DatabaseController()
         db.listenForEventAndNotify()
-        // dispatcher.dispatchTest()
+        // dispatcher.dispatch()
     }
     
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {

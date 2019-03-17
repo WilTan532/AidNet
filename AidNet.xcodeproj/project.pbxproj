@@ -22,6 +22,10 @@
 		5B6AB1B7223E439E0021CF8E /* medical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B6223E439E0021CF8E /* medical.jpg */; };
 		5B6AB1B9223E43AE0021CF8E /* police.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1B8223E43AE0021CF8E /* police.jpg */; };
 		5B6AB1BB223E43BC0021CF8E /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1BA223E43BC0021CF8E /* nature.jpg */; };
+		5B6AB1BF223E762F0021CF8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AB1BE223E762F0021CF8E /* MapViewController.swift */; };
+		5B6AB1C1223E8ED70021CF8E /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C0223E8ED70021CF8E /* map.jpg */; };
+		5B6AB1C3223E90960021CF8E /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C2223E90960021CF8E /* logo.jpg */; };
+		5B6AB1C5223E926A0021CF8E /* menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B6AB1C4223E926A0021CF8E /* menu.jpg */; };
 		942024D83FBA748B7584E307 /* Pods_AidNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99530F1E6F94EFA6A99443 /* Pods_AidNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,10 @@
 		5B6AB1B6223E439E0021CF8E /* medical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = medical.jpg; sourceTree = "<group>"; };
 		5B6AB1B8223E43AE0021CF8E /* police.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = police.jpg; sourceTree = "<group>"; };
 		5B6AB1BA223E43BC0021CF8E /* nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nature.jpg; sourceTree = "<group>"; };
+		5B6AB1BE223E762F0021CF8E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5B6AB1C0223E8ED70021CF8E /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
+		5B6AB1C2223E90960021CF8E /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		5B6AB1C4223E926A0021CF8E /* menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu.jpg; sourceTree = "<group>"; };
 		DDA61D008CA8BF9C471CC8FD /* Pods-AidNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.debug.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7B9932B1E999E53807CA3B /* Pods-AidNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AidNet.release.xcconfig"; path = "Target Support Files/Pods-AidNet/Pods-AidNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +89,9 @@
 		5B6AB192223DFE990021CF8E /* AidNet */ = {
 			isa = PBXGroup;
 			children = (
+				5B6AB1C4223E926A0021CF8E /* menu.jpg */,
+				5B6AB1C2223E90960021CF8E /* logo.jpg */,
+				5B6AB1C0223E8ED70021CF8E /* map.jpg */,
 				5B6AB1B6223E439E0021CF8E /* medical.jpg */,
 				5B6AB1B8223E43AE0021CF8E /* police.jpg */,
 				5B6AB1BA223E43BC0021CF8E /* nature.jpg */,
@@ -97,6 +108,7 @@
 				5B6AB1AE223E12BF0021CF8E /* EventDispatcher.swift */,
 				5B6AB1B0223E13980021CF8E /* DatabaseController.swift */,
 				5B6AB1B4223E351E0021CF8E /* NotificationClient.swift */,
+				5B6AB1BE223E762F0021CF8E /* MapViewController.swift */,
 			);
 			path = AidNet;
 			sourceTree = "<group>";
@@ -182,6 +194,9 @@
 				5B6AB1B9223E43AE0021CF8E /* police.jpg in Resources */,
 				5B6AB1A9223E01E70021CF8E /* GoogleService-Info.plist in Resources */,
 				5B6AB19E223DFE990021CF8E /* Assets.xcassets in Resources */,
+				5B6AB1C3223E90960021CF8E /* logo.jpg in Resources */,
+				5B6AB1C1223E8ED70021CF8E /* map.jpg in Resources */,
+				5B6AB1C5223E926A0021CF8E /* menu.jpg in Resources */,
 				5B6AB1BB223E43BC0021CF8E /* nature.jpg in Resources */,
 				5B6AB1B7223E439E0021CF8E /* medical.jpg in Resources */,
 				5B6AB199223DFE990021CF8E /* Main.storyboard in Resources */,
@@ -274,6 +289,7 @@
 				5B6AB1B5223E351E0021CF8E /* NotificationClient.swift in Sources */,
 				5B6AB1AF223E12BF0021CF8E /* EventDispatcher.swift in Sources */,
 				5B6AB196223DFE990021CF8E /* ViewController.swift in Sources */,
+				5B6AB1BF223E762F0021CF8E /* MapViewController.swift in Sources */,
 				5B6AB19C223DFE990021CF8E /* AidNet.xcdatamodeld in Sources */,
 				5B6AB1AD223E0BB50021CF8E /* EventBuilder.swift in Sources */,
 				5B6AB194223DFE990021CF8E /* AppDelegate.swift in Sources */,
