@@ -41,19 +41,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         locationManager.requestAlwaysAuthorization()
         startReceivingLocationChanges()
         
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        notificationCenter.getNotificationSettings(completionHandler: { (settings) in
-            guard settings.authorizationStatus == .authorized else {return}
-            
-            if settings.alertSetting == .enabled {
-                self.scheduleNotification()
-            }
-        })
+        // pushNotification()
         
         // Testing code
-        // let dispatcher = EventDispatcher()
-        // dispatcher.dispatchTest()
+        let dispatcher = EventDispatcher()
+        let db = DatabaseController()
+        db.listenForEvent()
+        dispatcher.dispatchTest()
     }
     
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
@@ -72,6 +66,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         marker.position = loc.coordinate
         marker.title = "whatever"
         marker.map = mapView
+    }
+    
+    func pushNotification() {
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        notificationCenter.getNotificationSettings(completionHandler: { (settings) in
+            guard settings.authorizationStatus == .authorized else {return}
+            
+            if settings.alertSetting == .enabled {
+                self.scheduleNotification()
+            }
+        })
     }
     
     func scheduleNotification() {
